@@ -1,0 +1,89 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Ressourcendateien">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Files\SDK">
+      <UniqueIdentifier>{f202979d-19bc-4768-803e-e9b9284fbd64}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Files\SDK\Includings">
+      <UniqueIdentifier>{acebddfe-72e4-4792-8bae-e6296c3d7a4b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Files\Cheat">
+      <UniqueIdentifier>{0b99d3e4-9999-44b7-a75e-daead1c0c666}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Files\Cheat\Feature">
+      <UniqueIdentifier>{e4606fa4-3102-4e4e-a27a-75416653c91f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Files\Utils">
+      <UniqueIdentifier>{12c0491d-cd1a-48c3-bed4-9c99763db13b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Files\SDK\Memory">
+      <UniqueIdentifier>{5942b4d9-42e4-4c75-8950-e7762e3580ab}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Files\SDK\Memory\Image_x64">
+      <UniqueIdentifier>{172a77d9-d155-4e2e-8471-5420cd7ce9e4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Files\SDK\Memory\Process">
+      <UniqueIdentifier>{dd01ece0-3311-4736-bf4e-07650421fd6a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Files\SDK\Memory\Offsets">
+      <UniqueIdentifier>{df92a0d6-2ff6-4c83-b7d1-7e174559a1f9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Files\Cheat\Feature\infinite_ammo_patch">
+      <UniqueIdentifier>{7a86b9f2-3f2b-4c92-973a-4d48010189f9}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Cheat\cheat.cpp">
+      <Filter>Files\Cheat</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp">
+      <Filter>Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SDK\Memory\Process\process.cpp">
+      <Filter>Files\SDK\Memory\Process</Filter>
+    </ClCompile>
+    <ClCompile Include="SDK\Memory\Image_x64\image_x64.cpp">
+      <Filter>Files\SDK\Memory\Image_x64</Filter>
+    </ClCompile>
+    <ClCompile Include="Cheat\Feature\infinite_ammo_patch\ft_infinite_ammo_patch.cpp">
+      <Filter>Files\Cheat\Feature\infinite_ammo_patch</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="SDK\Includings\custom_data_types.hpp">
+      <Filter>Files\SDK\Includings</Filter>
+    </ClInclude>
+    <ClInclude Include="Cheat\Feature\feature.hpp">
+      <Filter>Files\Cheat\Feature</Filter>
+    </ClInclude>
+    <ClInclude Include="Cheat\cheat.hpp">
+      <Filter>Files\Cheat</Filter>
+    </ClInclude>
+    <ClInclude Include="Utils\utils.hpp">
+      <Filter>Files\Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="SDK\globals.hpp">
+      <Filter>Files\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="SDK\Memory\Process\process.hpp">
+      <Filter>Files\SDK\Memory\Process</Filter>
+    </ClInclude>
+    <ClInclude Include="SDK\Memory\Image_x64\image_x64.hpp">
+      <Filter>Files\SDK\Memory\Image_x64</Filter>
+    </ClInclude>
+    <ClInclude Include="SDK\Memory\Offsets\offsets.hpp">
+      <Filter>Files\SDK\Memory\Offsets</Filter>
+    </ClInclude>
+    <ClInclude Include="Cheat\Feature\infinite_ammo_patch\ft_infinite_ammo_patch.hpp">
+      <Filter>Files\Cheat\Feature\infinite_ammo_patch</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

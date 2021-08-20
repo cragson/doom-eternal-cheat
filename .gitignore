@@ -30,3 +30,15 @@
 *.exe
 *.out
 *.app
+*.dll
+
+*.idb
+*.png
+*.jpg
+*.csv
+*.txt
+*.cfg
+
+.vs/
+Debug/
+Release/
