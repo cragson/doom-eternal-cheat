@@ -1,6 +1,6 @@
 #include "ft_god_mode.hpp"
-#include "SDK/globals.hpp"
-#include "SDK/Offsets/offsets.hpp"
+#include "../../SDK/globals.hpp"
+#include "../../SDK/Offsets/offsets.hpp"
 
 void ft_god_mode::tick()
 {

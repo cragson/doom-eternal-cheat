@@ -4,7 +4,7 @@
 #include "globals.hpp"
 #include "Offsets/offsets.hpp"
 #include "../Utils/utils.hpp"
-#include "../ft_god_mode.hpp"
+#include "../Features/god_mode/ft_god_mode.hpp"
 
 bool doom_cheat::setup_features()
 {

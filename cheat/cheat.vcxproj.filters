@@ -71,7 +71,7 @@
     <ClCompile Include="SDK\doom_cheat.cpp">
       <Filter>Files\SDK</Filter>
     </ClCompile>
-    <ClCompile Include="ft_god_mode.cpp">
+    <ClCompile Include="Features\god_mode\ft_god_mode.cpp">
       <Filter>Files\Features\god_mode</Filter>
     </ClCompile>
   </ItemGroup>
@@ -109,7 +109,7 @@
     <ClInclude Include="SDK\doom_cheat.hpp">
       <Filter>Files\SDK</Filter>
     </ClInclude>
-    <ClInclude Include="ft_god_mode.hpp">
+    <ClInclude Include="Features\god_mode\ft_god_mode.hpp">
       <Filter>Files\Features\god_mode</Filter>
     </ClInclude>
   </ItemGroup>
