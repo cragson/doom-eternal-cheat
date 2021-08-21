@@ -1,0 +1,3 @@
+[submodule "cheat/Osmium"]
+	path = cheat/Osmium
+	url = https://github.com/cragson/osmium.git
