@@ -1,6 +1,6 @@
 #pragma once
 
-#include "Osmium/Cheat/Feature/feature.hpp"
+#include "../../Osmium/Cheat/Feature/feature.hpp"
 
 class ft_god_mode : public feature
 {
