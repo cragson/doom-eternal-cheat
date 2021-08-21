@@ -144,6 +144,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="Features\infinite_ammo_patch\ft_infinite_ammo_patch.cpp" />
+    <ClCompile Include="ft_god_mode.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="Osmium\Memory\Image_x64\image_x64.cpp" />
     <ClCompile Include="Osmium\Memory\Image_x86\image_x86.cpp" />
@@ -152,6 +153,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Features\infinite_ammo_patch\ft_infinite_ammo_patch.hpp" />
+    <ClInclude Include="ft_god_mode.hpp" />
     <ClInclude Include="Osmium\Cheat\cheat.hpp" />
     <ClInclude Include="Osmium\Cheat\Feature\feature.hpp" />
     <ClInclude Include="Osmium\Includings\custom_data_types.hpp" />

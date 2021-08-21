@@ -48,6 +48,9 @@
     <Filter Include="Files\Osmium\Cheat\Feature">
       <UniqueIdentifier>{66f487bf-438c-4fe3-845f-4d3402af1809}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Files\Features\god_mode">
+      <UniqueIdentifier>{68515574-1cff-4801-916e-464c0d47bcf1}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -67,6 +70,9 @@
     </ClCompile>
     <ClCompile Include="SDK\doom_cheat.cpp">
       <Filter>Files\SDK</Filter>
+    </ClCompile>
+    <ClCompile Include="ft_god_mode.cpp">
+      <Filter>Files\Features\god_mode</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -102,6 +108,9 @@
     </ClInclude>
     <ClInclude Include="SDK\doom_cheat.hpp">
       <Filter>Files\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="ft_god_mode.hpp">
+      <Filter>Files\Features\god_mode</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

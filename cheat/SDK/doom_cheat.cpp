@@ -4,6 +4,7 @@
 #include "globals.hpp"
 #include "Offsets/offsets.hpp"
 #include "../Utils/utils.hpp"
+#include "../ft_god_mode.hpp"
 
 bool doom_cheat::setup_features()
 {
@@ -11,6 +12,11 @@ bool doom_cheat::setup_features()
 	infinite_ammo->set_virtual_key_code( VK_NUMPAD1 );
 	infinite_ammo->set_activation_delay( 420 );
 	this->m_features.push_back( std::move( infinite_ammo ) );
+
+	auto god_mode = std::make_unique< ft_god_mode >();
+	god_mode->set_virtual_key_code( VK_NUMPAD2 );
+	god_mode->set_activation_delay( 420 );
+	this->m_features.push_back( std::move( god_mode ) );
 
 	return true;
 }
@@ -27,6 +33,13 @@ bool doom_cheat::setup_offsets()
 		return false;
 
 	Offsets::infinite_ammo_patch = ammo_patch + 3;
+
+	
+	const auto god_patch = game_image->find_pattern( L"84 C0 75 0C F3 0F 10 44 24 4C" );
+	if( !god_patch )
+		return false;
+
+	Offsets::god_mode_patch = god_patch + 2;
 
 	return true;
 }
@@ -72,6 +85,7 @@ void doom_cheat::print_features()
 	};
 
 	msg("infinite ammo", VK_NUMPAD1);
+	msg( "god mode", VK_NUMPAD2);
 
 	printf("\n");
 }
@@ -86,6 +100,7 @@ void doom_cheat::print_offsets()
 	};
 
 	msg(L"Infinite Ammo Patch", Offsets::infinite_ammo_patch);
+	msg( L"God mode Patch", Offsets::god_mode_patch );
 
 	printf("\n");
 }
