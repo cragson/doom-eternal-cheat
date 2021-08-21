@@ -1,6 +1,6 @@
 #pragma once
-#include "../feature.hpp"
-#include "../../../SDK/Includings/custom_data_types.hpp"
+#include "../../Osmium/Cheat/Feature/feature.hpp"
+#include "../../Osmium/Includings/custom_data_types.hpp"
 
 class ft_infinite_ammo_patch : public feature
 {

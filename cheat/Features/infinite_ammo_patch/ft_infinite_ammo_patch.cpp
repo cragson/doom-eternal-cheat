@@ -1,6 +1,6 @@
 #include "ft_infinite_ammo_patch.hpp"
-#include "../../../SDK/globals.hpp"
-#include "../../../SDK/Memory/Offsets/offsets.hpp"
+#include "../../SDK/globals.hpp"
+#include "../../SDK/Offsets/offsets.hpp"
 
 void ft_infinite_ammo_patch::on_disable()
 {

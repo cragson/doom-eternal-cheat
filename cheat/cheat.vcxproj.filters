@@ -1,0 +1,107 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Ressourcendateien">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Files\Features">
+      <UniqueIdentifier>{208b50a1-536c-4e68-b3cb-e2745edc528f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Files\Osmium">
+      <UniqueIdentifier>{56c737a1-6293-46d2-8a37-4c6012d614bd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Files\SDK">
+      <UniqueIdentifier>{e6e5e9c6-27f9-427a-a363-91efd22511c7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Files\Utils">
+      <UniqueIdentifier>{82a41c1c-1ace-4274-9b3e-523ca3b63dd4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Files\Features\infinite_ammo_patch">
+      <UniqueIdentifier>{b41a5bf5-e692-4a38-8e1b-d8d3d66a64b8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Files\SDK\Offsets">
+      <UniqueIdentifier>{01859cb4-153f-48c8-820c-de33e0d02667}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Files\Osmium\Cheat">
+      <UniqueIdentifier>{3678b447-b95e-4bc0-927f-317ba5e9b090}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Files\Osmium\Includings">
+      <UniqueIdentifier>{06138d18-dd91-42b1-b018-f71f32d85c84}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Files\Osmium\Memory">
+      <UniqueIdentifier>{a21e1b75-9e40-460e-b379-0931db45961d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Files\Osmium\Memory\Image_x64">
+      <UniqueIdentifier>{de3c3dad-372a-49c2-a0fd-dd861ee5a6b8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Files\Osmium\Memory\Image_x86">
+      <UniqueIdentifier>{db45128c-f2f5-48f9-a2b8-54c161245cdf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Files\Osmium\Memory\Process">
+      <UniqueIdentifier>{3321f08e-b959-4fdb-9160-06fc24ab8a2c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Files\Osmium\Cheat\Feature">
+      <UniqueIdentifier>{66f487bf-438c-4fe3-845f-4d3402af1809}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Features\infinite_ammo_patch\ft_infinite_ammo_patch.cpp">
+      <Filter>Files\Features\infinite_ammo_patch</Filter>
+    </ClCompile>
+    <ClCompile Include="Osmium\Memory\Process\process.cpp">
+      <Filter>Files\Osmium\Memory\Process</Filter>
+    </ClCompile>
+    <ClCompile Include="Osmium\Memory\Image_x86\image_x86.cpp">
+      <Filter>Files\Osmium\Memory\Image_x86</Filter>
+    </ClCompile>
+    <ClCompile Include="Osmium\Memory\Image_x64\image_x64.cpp">
+      <Filter>Files\Osmium\Memory\Image_x64</Filter>
+    </ClCompile>
+    <ClCompile Include="SDK\doom_cheat.cpp">
+      <Filter>Files\SDK</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Features\infinite_ammo_patch\ft_infinite_ammo_patch.hpp">
+      <Filter>Files\Features\infinite_ammo_patch</Filter>
+    </ClInclude>
+    <ClInclude Include="Utils\utils.hpp">
+      <Filter>Files\Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="SDK\Offsets\offsets.hpp">
+      <Filter>Files\SDK\Offsets</Filter>
+    </ClInclude>
+    <ClInclude Include="SDK\globals.hpp">
+      <Filter>Files\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Osmium\Memory\Process\process.hpp">
+      <Filter>Files\Osmium\Memory\Process</Filter>
+    </ClInclude>
+    <ClInclude Include="Osmium\Memory\Image_x86\image_x86.hpp">
+      <Filter>Files\Osmium\Memory\Image_x86</Filter>
+    </ClInclude>
+    <ClInclude Include="Osmium\Memory\Image_x64\image_x64.hpp">
+      <Filter>Files\Osmium\Memory\Image_x64</Filter>
+    </ClInclude>
+    <ClInclude Include="Osmium\Includings\custom_data_types.hpp">
+      <Filter>Files\Osmium\Includings</Filter>
+    </ClInclude>
+    <ClInclude Include="Osmium\Cheat\Feature\feature.hpp">
+      <Filter>Files\Osmium\Cheat\Feature</Filter>
+    </ClInclude>
+    <ClInclude Include="Osmium\Cheat\cheat.hpp">
+      <Filter>Files\Osmium\Cheat</Filter>
+    </ClInclude>
+    <ClInclude Include="SDK\doom_cheat.hpp">
+      <Filter>Files\SDK</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

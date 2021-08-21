@@ -143,21 +143,24 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="Cheat\Feature\infinite_ammo_patch\ft_infinite_ammo_patch.cpp" />
+    <ClCompile Include="Features\infinite_ammo_patch\ft_infinite_ammo_patch.cpp" />
     <ClCompile Include="main.cpp" />
-    <ClCompile Include="Cheat\cheat.cpp" />
-    <ClCompile Include="SDK\Memory\Image_x64\image_x64.cpp" />
-    <ClCompile Include="SDK\Memory\Process\process.cpp" />
+    <ClCompile Include="Osmium\Memory\Image_x64\image_x64.cpp" />
+    <ClCompile Include="Osmium\Memory\Image_x86\image_x86.cpp" />
+    <ClCompile Include="Osmium\Memory\Process\process.cpp" />
+    <ClCompile Include="SDK\doom_cheat.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Cheat\cheat.hpp" />
-    <ClInclude Include="Cheat\Feature\feature.hpp" />
-    <ClInclude Include="Cheat\Feature\infinite_ammo_patch\ft_infinite_ammo_patch.hpp" />
+    <ClInclude Include="Features\infinite_ammo_patch\ft_infinite_ammo_patch.hpp" />
+    <ClInclude Include="Osmium\Cheat\cheat.hpp" />
+    <ClInclude Include="Osmium\Cheat\Feature\feature.hpp" />
+    <ClInclude Include="Osmium\Includings\custom_data_types.hpp" />
+    <ClInclude Include="Osmium\Memory\Image_x64\image_x64.hpp" />
+    <ClInclude Include="Osmium\Memory\Image_x86\image_x86.hpp" />
+    <ClInclude Include="Osmium\Memory\Process\process.hpp" />
+    <ClInclude Include="SDK\doom_cheat.hpp" />
     <ClInclude Include="SDK\globals.hpp" />
-    <ClInclude Include="SDK\Includings\custom_data_types.hpp" />
-    <ClInclude Include="SDK\Memory\Image_x64\image_x64.hpp" />
-    <ClInclude Include="SDK\Memory\Offsets\offsets.hpp" />
-    <ClInclude Include="SDK\Memory\Process\process.hpp" />
+    <ClInclude Include="SDK\Offsets\offsets.hpp" />
     <ClInclude Include="Utils\utils.hpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
