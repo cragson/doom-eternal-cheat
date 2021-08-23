@@ -51,6 +51,9 @@
     <Filter Include="Files\Features\god_mode">
       <UniqueIdentifier>{68515574-1cff-4801-916e-464c0d47bcf1}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Files\Features\free_upgrades">
+      <UniqueIdentifier>{76e4187d-028b-4b7c-b21f-7d7677bb3125}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -73,6 +76,9 @@
     </ClCompile>
     <ClCompile Include="Features\god_mode\ft_god_mode.cpp">
       <Filter>Files\Features\god_mode</Filter>
+    </ClCompile>
+    <ClCompile Include="Features\free_upgrades\ft_free_upgrades.cpp">
+      <Filter>Files\Features\free_upgrades</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -111,6 +117,9 @@
     </ClInclude>
     <ClInclude Include="Features\god_mode\ft_god_mode.hpp">
       <Filter>Files\Features\god_mode</Filter>
+    </ClInclude>
+    <ClInclude Include="Features\free_upgrades\ft_free_upgrades.hpp">
+      <Filter>Files\Features\free_upgrades</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
