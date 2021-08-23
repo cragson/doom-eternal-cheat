@@ -5,19 +5,32 @@
 #include "Offsets/offsets.hpp"
 #include "../Utils/utils.hpp"
 #include "../Features/god_mode/ft_god_mode.hpp"
+#include "../Features/free_upgrades/ft_free_upgrades.hpp"
+#include "../ft_god_mode.hpp"
 
 bool doom_cheat::setup_features()
 {
 	auto infinite_ammo = std::make_unique< ft_infinite_ammo_patch >();
+	infinite_ammo->set_name( L"Infinite Ammo" );
 	infinite_ammo->set_virtual_key_code( VK_NUMPAD1 );
 	infinite_ammo->set_activation_delay( 420 );
+	infinite_ammo->enable_print_status();
 	this->m_features.push_back( std::move( infinite_ammo ) );
 
 	auto god_mode = std::make_unique< ft_god_mode >();
+	god_mode->set_name( L"God Mode" );
 	god_mode->set_virtual_key_code( VK_NUMPAD2 );
 	god_mode->set_activation_delay( 420 );
+	god_mode->enable_print_status();
 	this->m_features.push_back( std::move( god_mode ) );
 
+	auto free_upgrades = std::make_unique< ft_free_upgrades >();
+	free_upgrades->set_name( L"Free Upgrades" );
+	free_upgrades->set_virtual_key_code( VK_NUMPAD3 );
+	free_upgrades->set_activation_delay( 420 );
+	free_upgrades->enable_print_status();
+	this->m_features.push_back( std::move( free_upgrades ) );
+	
 	return true;
 }
 
@@ -40,6 +53,12 @@ bool doom_cheat::setup_offsets()
 		return false;
 
 	Offsets::god_mode_patch = god_patch + 2;
+
+	const auto upgrades_patch = game_image->find_pattern( L"41 8B E8 48 8B D9 44 01 84 B1" );
+	if( !upgrades_patch )
+		return false;
+
+	Offsets::free_upgrades_patch = upgrades_patch + 7;
 
 	return true;
 }
@@ -76,16 +95,13 @@ void doom_cheat::print_features()
 	printf("\n");
 
 	printf("Feature-Name -> Feature-Hotkey\n");
-	const auto msg = [](const std::string& name, const int16_t virtual_key, const bool sub = false)
-	{
-		if (sub)
-			printf("\t %-20s -> %s\n", name.c_str(), utils::virtual_key_as_string(virtual_key).c_str());
-		else
-			printf("[>] %-25s-> %s\n", name.c_str(), utils::virtual_key_as_string(virtual_key).c_str());
-	};
 
+	for( const auto & feature : this->m_features )
+		printf( "[>] %-25ws -> %s\n", feature->get_name().c_str(), utils::virtual_key_as_string( feature->get_virtual_key_code() ).c_str() );
 	msg("infinite ammo", VK_NUMPAD1);
 	msg( "god mode", VK_NUMPAD2);
+	for( const auto & feature : this->m_features )
+		printf( "[>] %-25ws -> %s\n", feature->get_name().c_str(), utils::virtual_key_as_string( feature->get_virtual_key_code() ).c_str() );
 
 	printf("\n");
 }
@@ -96,11 +112,17 @@ void doom_cheat::print_offsets()
 
 	const auto msg = [](const std::wstring& name, const std::uintptr_t value)
 	{
-		printf("[>] %-35ws -> 0x%llX\n", name.c_str(), value);
+		printf("[>] %-35ws -> 0x%08X\n", name.c_str(), value );
 	};
 
+	msg( L"Infinite Ammo Patch", Offsets::infinite_ammo_patch );
+	msg( L"God mode Patch", Offsets::god_mode_patch );
+	msg( L"Free Upgrades", Offsets::free_upgrades_patch );
 	msg(L"Infinite Ammo Patch", Offsets::infinite_ammo_patch);
 	msg( L"God mode Patch", Offsets::god_mode_patch );
+	msg( L"Infinite Ammo Patch", Offsets::infinite_ammo_patch );
+	msg( L"God mode Patch", Offsets::god_mode_patch );
+	msg( L"Free Upgrades", Offsets::free_upgrades_patch );
 
 	printf("\n");
 }
