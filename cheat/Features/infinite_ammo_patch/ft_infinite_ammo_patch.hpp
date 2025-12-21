@@ -15,6 +15,10 @@ public:
 
 	void tick() override;
 
+	void on_render() override {}
+
+	void on_shutdown() override {}
+
 private:
 
 	byte_vector m_original_bytes;

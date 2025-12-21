@@ -56,9 +56,6 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="main.cpp">
-      <Filter>Files</Filter>
-    </ClCompile>
     <ClCompile Include="Features\infinite_ammo_patch\ft_infinite_ammo_patch.cpp">
       <Filter>Files\Features\infinite_ammo_patch</Filter>
     </ClCompile>
@@ -79,6 +76,21 @@
     </ClCompile>
     <ClCompile Include="Features\free_upgrades\ft_free_upgrades.cpp">
       <Filter>Files\Features\free_upgrades</Filter>
+    </ClCompile>
+    <ClCompile Include="Osmium\Memory\Hook\hook.cpp">
+      <Filter>Files\Osmium</Filter>
+    </ClCompile>
+    <ClCompile Include="Osmium\Overlay\overlay.cpp">
+      <Filter>Files\Osmium</Filter>
+    </ClCompile>
+    <ClCompile Include="Osmium\Testing\test_cheat.cpp">
+      <Filter>Files\Osmium</Filter>
+    </ClCompile>
+    <ClCompile Include="Osmium\Testing\test_overlay.cpp">
+      <Filter>Files\Osmium</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp">
+      <Filter>Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -120,6 +132,27 @@
     </ClInclude>
     <ClInclude Include="Features\free_upgrades\ft_free_upgrades.hpp">
       <Filter>Files\Features\free_upgrades</Filter>
+    </ClInclude>
+    <ClInclude Include="Osmium\Memory\Hook\hook.hpp">
+      <Filter>Files\Osmium</Filter>
+    </ClInclude>
+    <ClInclude Include="Osmium\Includings\modules.hpp">
+      <Filter>Files\Osmium</Filter>
+    </ClInclude>
+    <ClInclude Include="Osmium\Overlay\overlay.hpp">
+      <Filter>Files\Osmium</Filter>
+    </ClInclude>
+    <ClInclude Include="Osmium\Memory\RegisterDumper\registercontext.hpp">
+      <Filter>Files\Osmium</Filter>
+    </ClInclude>
+    <ClInclude Include="Osmium\Memory\SharedMemoryInstance\sharedmemoryinstance.hpp">
+      <Filter>Files\Osmium</Filter>
+    </ClInclude>
+    <ClInclude Include="Osmium\Testing\test_cheat.hpp">
+      <Filter>Files\Osmium</Filter>
+    </ClInclude>
+    <ClInclude Include="Osmium\Testing\test_overlay.hpp">
+      <Filter>Files\Osmium</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

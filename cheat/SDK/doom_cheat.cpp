@@ -1,12 +1,11 @@
 #include "doom_cheat.hpp"
-
-#include "../Features/infinite_ammo_patch/ft_infinite_ammo_patch.hpp"
 #include "globals.hpp"
 #include "Offsets/offsets.hpp"
 #include "../Utils/utils.hpp"
-#include "../Features/god_mode/ft_god_mode.hpp"
+
 #include "../Features/free_upgrades/ft_free_upgrades.hpp"
-#include "../ft_god_mode.hpp"
+#include "../Features/god_mode/ft_god_mode.hpp"
+#include "../Features/infinite_ammo_patch/ft_infinite_ammo_patch.hpp"
 
 bool doom_cheat::setup_features()
 {
@@ -98,10 +97,6 @@ void doom_cheat::print_features()
 
 	for( const auto & feature : this->m_features )
 		printf( "[>] %-25ws -> %s\n", feature->get_name().c_str(), utils::virtual_key_as_string( feature->get_virtual_key_code() ).c_str() );
-	msg("infinite ammo", VK_NUMPAD1);
-	msg( "god mode", VK_NUMPAD2);
-	for( const auto & feature : this->m_features )
-		printf( "[>] %-25ws -> %s\n", feature->get_name().c_str(), utils::virtual_key_as_string( feature->get_virtual_key_code() ).c_str() );
 
 	printf("\n");
 }
@@ -112,14 +107,9 @@ void doom_cheat::print_offsets()
 
 	const auto msg = [](const std::wstring& name, const std::uintptr_t value)
 	{
-		printf("[>] %-35ws -> 0x%08X\n", name.c_str(), value );
+		printf("[>] %-35ws -> 0x%llX\n", name.c_str(), value );
 	};
 
-	msg( L"Infinite Ammo Patch", Offsets::infinite_ammo_patch );
-	msg( L"God mode Patch", Offsets::god_mode_patch );
-	msg( L"Free Upgrades", Offsets::free_upgrades_patch );
-	msg(L"Infinite Ammo Patch", Offsets::infinite_ammo_patch);
-	msg( L"God mode Patch", Offsets::god_mode_patch );
 	msg( L"Infinite Ammo Patch", Offsets::infinite_ammo_patch );
 	msg( L"God mode Patch", Offsets::god_mode_patch );
 	msg( L"Free Upgrades", Offsets::free_upgrades_patch );
